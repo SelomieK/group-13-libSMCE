@@ -3,4 +3,4 @@ default_excludes: true
 languages:
 - cpp
 - script
-- c
+- objectivec
