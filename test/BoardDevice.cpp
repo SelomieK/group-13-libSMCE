@@ -78,6 +78,6 @@ TEST_CASE("Basic board device", "[BoardDevice]") {
             std::this_thread::sleep_for(2ms);
         } while (devs[1].f2.load() != 65500);
     }
-    // FIXME test mutexes and constant storage
+    
     REQUIRE(br.stop());
 }
