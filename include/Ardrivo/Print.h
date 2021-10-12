@@ -60,7 +60,7 @@ class SMCE__DLL_RT_API Print {
     inline std::size_t print(Fp val, int prec = 2) {
         return print(String{val, prec});
     }
-    // std::size_t print(const struct Printable&); // FIXME: implement base Printable
+    
 
     template <std::size_t N>
     std::size_t println(const char (&lit)[N]) {
@@ -77,7 +77,7 @@ class SMCE__DLL_RT_API Print {
     inline std::size_t println(Fp val, int prec = 2) {
         return print(val, prec) + println();
     }
-    // inline std::size_t println(const Printable& p) { return print(p) + println(); }
+    
     std::size_t println();
 
     virtual void flush(); // Empty implementation for backward compatibility
